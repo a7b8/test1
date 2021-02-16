@@ -1,4 +1,4 @@
-node() {
+node {
     stage("Checkout") {
         deleteDir()
         git "https://github.com/a7b8/test1.git"
@@ -15,4 +15,5 @@ node() {
     stage("Delivery") {
         sh "echo Pulling on registry......."
     }
+    
 }
